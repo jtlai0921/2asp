@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>未命名頁面</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 800px;
+        }
+        .style2
+        {
+            font-size: xx-large;
+            color: #FFFFFF;
+            height: 50px;
+        }
+        .style3
+        {
+            width: 100px;
+        }
+        .style4
+        {
+            font-family: 微軟正黑體;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td align="left" bgcolor="#507CD1" class="style2" colspan="2" 
+                    valign="middle">
+                    &nbsp; <span class="style4">安安小舖網路書店</span></td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#EFF3FB" height="500px" valign="top" class="style3">
+                    <asp:Label ID="Label1" runat="server" BackColor="#B5C7DE" ForeColor="#507CD1" 
+                        Text="主選單" Width="100px"></asp:Label>
+                    <asp:Menu ID="Menu1" runat="server">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="產品目錄" Value="產品目錄">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="購物車" Value="購物車" NavigateUrl="~/ShoppingCart.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td valign="top">
+        <asp:ContentPlaceHolder id="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

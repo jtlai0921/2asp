@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" %>
+
+<script runat="server">
+
+</script>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MenuContent" Runat="Server">
+    <a href="Ch11-2-3.aspx">網站首頁</a><br/>
+<a href="Ch11-2-3.aspx">產品目錄</a><br/>
+<a href="Ch11-2-3.aspx">產品搜尋</a><br/>
+<a href="Ch11-2-3.aspx">關於網站</a>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+    <table style="width: 100%">
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder ID="UpContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder ID="DownContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+

@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>未命名頁面</title>
+    <style type="text/css">
+        .style1
+        {
+            width: 57%;
+            height: 76px;
+        }
+        .style2
+        {
+            height: 48px;
+        }
+        .style3
+        {
+            height: 30px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td class="style2" colspan="2">
+                    <asp:Label ID="Label1" runat="server" BackColor="#993333" BorderStyle="None" 
+                        Font-Size="XX-Large" ForeColor="White" Height="41px" Text="會員管理與個人化程序" 
+                        Width="515px"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style3">
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
+                        StaticDisplayLevels="2">
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td class="style3">
+        <asp:ContentPlaceHolder id="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
